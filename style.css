@@ -1,93 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
-$strongCyan: hsl(171, 66%, 44%);
-$lightBlue: hsl(233, 100%, 69%);
-$darkGrayishBlue: hsl(210, 10%, 33%);
-$grayisBlue: hsl(201, 11%, 66%);
-$font: "Bai Jamjuree", sans-serif;
-
 body {
   width: 100vw;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: $font;
+  font-family: "Bai Jamjuree", sans-serif;
   text-align: center;
 }
+
 header {
   width: 100vw;
   background-image: url("images/bg-header-mobile.png");
   background-size: cover;
   padding: 90px 0;
-  img {
-    padding-bottom: 35px;
-  }
 }
+
+header img {
+  padding-bottom: 35px;
+}
+
 main {
   width: 90vw;
   margin: 0 auto;
-  img {
-    width: 90vw;
-    height: auto;
-    padding: 20px 0;
-  }
-  .companyLogos {
-    width: auto;
-    display: block;
-    margin: 70px auto;
-  }
 }
+
+main img {
+  width: 90vw;
+  height: auto;
+  padding: 20px 0;
+}
+
+main .companyLogos {
+  width: auto;
+  display: block;
+  margin: 70px auto;
+}
+
 p,
 a {
   font-size: 18px;
-  color: $grayisBlue;
+  color: #9fabb2;
   font-weight: 400;
   text-decoration: none;
 }
+
 a:hover {
-  color: $strongCyan;
+  color: #26baa4;
 }
+
 h1 {
-  color: $darkGrayishBlue;
+  color: #4c545d;
   font-weight: 600;
   font-size: 36px;
 }
-@mixin btn {
+
+.ios {
   color: white;
   padding: 1em 4em;
   border: none;
   border-radius: 3em;
   cursor: pointer;
   margin: 1em;
+  background-color: #26baa4;
 }
-.ios {
-  @include btn;
-  background-color: $strongCyan;
-}
+
 .mac {
-  @include btn;
-  background-color: $lightBlue;
+  color: white;
+  padding: 1em 4em;
+  border: none;
+  border-radius: 3em;
+  cursor: pointer;
+  margin: 1em;
+  background-color: #6173ff;
 }
+
 h2 {
-  color: $darkGrayishBlue;
+  color: #4c545d;
   font-size: 30px;
   font-weight: 600;
 }
+
 h3 {
-  color: $darkGrayishBlue;
+  color: #4c545d;
   font-size: 25px;
   font-weight: 600;
 }
+
 dt {
-  color: $darkGrayishBlue;
+  color: #4c545d;
   font-size: 24px;
   font-weight: 600;
   padding: 20px 0;
-  img {
-    width: auto;
-  }
 }
+
+dt img {
+  width: auto;
+}
+
 dd {
-  color: $grayisBlue;
+  color: #9fabb2;
   margin: 0;
   padding-bottom: 20px;
 }
@@ -95,30 +106,38 @@ dd {
 ul {
   list-style-type: none;
   padding: 0;
-  li{
-      padding:10px;
-  }
 }
+
+ul li {
+  padding: 10px;
+}
+
 footer {
   margin-top: 110px;
-  .footerLogo {
-      width: 15%;
-      padding-top: 40px;
-    }
-    background-color: #f3f3f3;
-    position: absolute;
-    img{
-        padding: 20px;
-    }
-    a {
-        color:$darkGrayishBlue;
-    svg:hover {
-      fill: $strongCyan;
-    }
-  }
+  background-color: #f3f3f3;
+  position: absolute;
 }
+
+footer .footerLogo {
+  width: 15%;
+  padding-top: 40px;
+}
+
+footer img {
+  padding: 20px;
+}
+
+footer a {
+  color: #4c545d;
+}
+
+footer a svg:hover {
+  fill: #26baa4;
+}
+
 @media (min-width: 64em) {
   header {
     background-image: url("images/bg-header-desktop.png");
   }
 }
+/*# sourceMappingURL=style.css.map */
