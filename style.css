@@ -113,6 +113,7 @@ figure img {
 
 ul {
   list-style-type: none;
+  display: block;
   padding: 0;
 }
 
@@ -122,6 +123,7 @@ ul li {
 
 footer {
   margin-top: 110px;
+  text-align: center;
   background-color: #f3f3f3;
   position: absolute;
 }
@@ -192,10 +194,38 @@ footer a svg:hover {
   }
   footer {
     width: 100vw;
+    text-align: start;
+    height: 180px;
   }
   footer .footerLogo {
     width: 50px;
-    padding-top: 40px;
+    margin-left: 150px;
+  }
+  footer ul {
+    display: inline-block;
+    -webkit-column-count: 3;
+            column-count: 3;
+    margin: 0 40px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-transform: translateY(-52px);
+            transform: translateY(-52px);
+  }
+  footer ul li {
+    padding: 10px;
+    margin: 0 20px;
+  }
+  footer .icons {
+    float: right;
+    padding: 40px 0 0 0;
+    margin-right: 150px;
+  }
+  footer .attribution {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 20px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

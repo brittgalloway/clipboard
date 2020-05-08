@@ -101,6 +101,7 @@ figure {
 }
 ul {
   list-style-type: none;
+  display: block;
   padding: 0;
   li {
     padding: 10px;
@@ -108,6 +109,7 @@ ul {
 }
 footer {
   margin-top: 110px;
+  text-align: center;
   .footerLogo {
     width: 15%;
     padding-top: 40px;
@@ -180,9 +182,31 @@ footer {
   }
   footer {
     width: 100vw;
+    text-align: start;
+    height: 180px;
     .footerLogo {
       width: 50px;
-      padding-top: 40px;
+     margin-left: 150px;
+    }
+    ul{
+        display:inline-block;
+        column-count: 3;
+        margin: 0 40px;
+        height: fit-content;
+        transform: translateY(-52px);
+        li{
+            padding:10px;
+            margin: 0 20px;
+        }
+    }
+    .icons{
+        float:right;
+        padding: 40px 0 0 0;
+        margin-right:150px ;
+    }
+    .attribution{
+        width: fit-content;
+        padding: 20px 0
     }
   }
 }
