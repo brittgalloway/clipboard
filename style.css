@@ -64,6 +64,10 @@ h1 {
   background-color: #26baa4;
 }
 
+.ios:hover {
+  background-color: #3cd7c0;
+}
+
 .mac {
   color: white;
   padding: 1em 4em;
@@ -72,6 +76,10 @@ h1 {
   cursor: pointer;
   margin: 1em;
   background-color: #6173ff;
+}
+
+.mac:hover {
+  background-color: #94a0ff;
 }
 
 h2 {
@@ -138,6 +146,9 @@ footer a svg:hover {
 @media (min-width: 64em) {
   header {
     background-image: url("images/bg-header-desktop.png");
+  }
+  footer {
+    width: 100vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

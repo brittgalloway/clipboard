@@ -62,10 +62,16 @@ h1 {
 .ios {
   @include btn;
   background-color: $strongCyan;
+  &:hover{
+    background-color: lighten( $strongCyan, 10% )
+  }
 }
 .mac {
   @include btn;
   background-color: $lightBlue;
+  &:hover{
+    background-color: lighten( $lightBlue, 10% )
+  }
 }
 h2 {
   color: $darkGrayishBlue;
@@ -120,5 +126,8 @@ footer {
 @media (min-width: 64em) {
   header {
     background-image: url("images/bg-header-desktop.png");
+  }
+  footer{
+      width: 100vw;
   }
 }
