@@ -1,0 +1,28 @@
+{
+  "name": "clipboard",
+  "version": "1.0.0",
+  "description": "Practicing markup and working from a design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brittgalloway/clipboard.git"
+  },
+  "keywords": [
+    "frontend",
+    "mentor",
+    "html",
+    "scss"
+  ],
+  "author": "Brittney Galloway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brittgalloway/clipboard/issues"
+  },
+  "homepage": "https://github.com/brittgalloway/clipboard#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
