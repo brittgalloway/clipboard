@@ -101,14 +101,14 @@ dt {
   padding: 20px 0;
 }
 
-dt img {
-  width: auto;
-}
-
 dd {
   color: #9fabb2;
   margin: 0;
   padding-bottom: 20px;
+}
+
+figure img {
+  width: auto;
 }
 
 ul {
@@ -147,8 +147,55 @@ footer a svg:hover {
   header {
     background-image: url("images/bg-header-desktop.png");
   }
+  p {
+    width: 46.2vw;
+    margin: auto;
+  }
+  .ios {
+    margin: 2.5em 1em;
+  }
+  .mac {
+    margin: 2.5em 1em;
+  }
+  main img {
+    width: auto;
+    margin-top: 70px;
+  }
+  main .computer {
+    position: absolute;
+    left: -3vw;
+  }
+  main .dlSide {
+    display: inline;
+    position: relative;
+    text-align: start;
+    left: 50vw;
+    top: 10em;
+  }
+  main .dlSide dd {
+    width: 21em;
+  }
+  main #marginTop {
+    margin-top: 14em;
+  }
+  main figure {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+  }
+  main figure figcaption p {
+    width: 21em;
+  }
+  main .companyLogos {
+    display: inline;
+    margin: 70px 45px;
+  }
   footer {
     width: 100vw;
+  }
+  footer .footerLogo {
+    width: 50px;
+    padding-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

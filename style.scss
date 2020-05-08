@@ -62,15 +62,15 @@ h1 {
 .ios {
   @include btn;
   background-color: $strongCyan;
-  &:hover{
-    background-color: lighten( $strongCyan, 10% )
+  &:hover {
+    background-color: lighten($strongCyan, 10%);
   }
 }
 .mac {
   @include btn;
   background-color: $lightBlue;
-  &:hover{
-    background-color: lighten( $lightBlue, 10% )
+  &:hover {
+    background-color: lighten($lightBlue, 10%);
   }
 }
 h2 {
@@ -88,46 +88,101 @@ dt {
   font-size: 24px;
   font-weight: 600;
   padding: 20px 0;
-  img {
-    width: auto;
-  }
 }
 dd {
   color: $grayisBlue;
   margin: 0;
   padding-bottom: 20px;
 }
-
+figure {
+  img {
+    width: auto;
+  }
+}
 ul {
   list-style-type: none;
   padding: 0;
-  li{
-      padding:10px;
+  li {
+    padding: 10px;
   }
 }
 footer {
   margin-top: 110px;
   .footerLogo {
-      width: 15%;
-      padding-top: 40px;
-    }
-    background-color: #f3f3f3;
-    position: absolute;
-    img{
-        padding: 20px;
-    }
-    a {
-        color:$darkGrayishBlue;
+    width: 15%;
+    padding-top: 40px;
+  }
+  background-color: #f3f3f3;
+  position: absolute;
+  img {
+    padding: 20px;
+  }
+  a {
+    color: $darkGrayishBlue;
     svg:hover {
       fill: $strongCyan;
     }
   }
 }
 @media (min-width: 64em) {
+  @mixin btn {
+    margin: 2.5em 1em;
+  }
   header {
     background-image: url("images/bg-header-desktop.png");
   }
-  footer{
-      width: 100vw;
+  p {
+    width: 46.2vw;
+    margin: auto;
+  }
+  .ios {
+    @include btn;
+  }
+  .mac {
+    @include btn;
+  }
+  main {
+    img {
+      width: auto;
+      margin-top: 70px;
+    }
+    .computer {
+      position: absolute;
+      left: -3vw;
+    }
+    .dlSide {
+      display: inline;
+      position: relative;
+      text-align: start;
+      left: 50vw;
+      top: 10em;
+      dd {
+        width: 21em;
+      }
+    }
+    #marginTop {
+      margin-top: 14em;
+    }
+    figure {
+      display: inline-block;
+      margin: 0;
+      padding: 10px;
+      figcaption {
+        p {
+          width: 21em;
+        }
+      }
+    }
+    .companyLogos {
+      display: inline;
+      margin: 70px 45px;
+    }
+  }
+  footer {
+    width: 100vw;
+    .footerLogo {
+      width: 50px;
+      padding-top: 40px;
+    }
   }
 }
